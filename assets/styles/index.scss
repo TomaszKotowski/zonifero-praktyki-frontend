@@ -3,9 +3,17 @@
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 // font-family: 'Roboto', sans-serif;
+
+// 70px big-title do pierwszego <h1> i pozostałe <h2>
+// 50px title <h3>
+// 30px sub-title <h4>
+// 19px bold <h5>
+// 17px normal <p>
+
 html {
     box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
 }

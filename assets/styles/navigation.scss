@@ -1,0 +1,17 @@
+.nav {
+  font-size: $m-font;
+  margin-left: $content-margin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 849px;
+  height: 7.1rem;
+  margin-top: 5rem;
+  &__link {
+    &:hover {
+      font-weight: bold;
+      border-bottom: 1px red solid;
+      text-decoration-line: underline;
+    }
+  }
+}

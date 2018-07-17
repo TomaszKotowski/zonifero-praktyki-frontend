@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top:44px;
+  &__logo {
+    height: 1.8rem;
+    margin-left:3.5%;
+  }
+  &__nav__list {
+    margin: 0;
+    padding-top:6px;
+    display: flex;
+    flex-direction: row;
+    font-size: $nav-font;
+    &__item {
+      padding-left: 2.93%;
+      padding-right: 2.93%;
+      &--blue {}
+    }
+  }
+}

@@ -2,18 +2,20 @@
 // but allowing components to change
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-// font-family: 'Roboto', sans-serif;
-
-// 70px big-title do pierwszego <h1> i pozostałe <h2>
-// 50px title <h3>
-// 30px sub-title <h4>
-// 19px bold <h5>
-// 17px normal <p>
-
+@import 'variables';
+@import 'header';
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%; //http://pxtoem.com/
 }
-*, *:before, *:after {
-    box-sizing: inherit;
-    font-family: 'Roboto', sans-serif;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
 }

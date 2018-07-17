@@ -11,18 +11,20 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <img src="./assets/images/logo.png" alt="logo">
-        <nav>
-            <ul>
-                <li>Zonifero products</li>
-                <li>Store</li>
-                <li>Blog</li>
-                <li>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/images/logo.png" alt="logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item">Zonifero products</li>
+                <li class="header__nav__list__item">Store</li>
+                <li class="header__nav__list__item">Blog</li>
+                <li class="header__nav__list__item">
                     <img src="./assets/images/globe.png" alt="globe">
                 </li>
-                <li>Sing in</li>
-                <li>Get the app</li>
+                <li class="header__nav__item">Sing in</li>
+                <li class="header__nav__item header__nav__item--blue">Get the app</li>
             </ul>
         </nav>
     </header>
@@ -54,7 +56,7 @@
                     </a>
                 </button>
             </div>
-            <img src="./assets/images/first_section_bg.png" alt="first-section-background" class="first-section-background">
+            <img src="./assets/images/first_section_bg.png" alt="first-div-background" class="first-div-background">
             <img src="./assets/images/hand.png" alt="hand" class="hand">
         </div>
         <div class="overview__for-how">
@@ -257,7 +259,7 @@
             <img src="./assets/images/devices.png" alt="devices">
         </div>
         <div class="ecosystem__info">
-            <div class="ecosystem__info-523">
+            <div class="ecosystem__info__column">
                 <h2>523%</h2>
                 <p>Długoterminowe korzyści z wdrożenia Zonifero wynoszą co najmniej 523%* w stosunku do wydanej kwoty. Lorem
                     ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor sem sit amet purus maximus, eu fringilla
@@ -265,7 +267,7 @@
                     <span>* Wyliczenia są zależne od lokalizacji biura</span>
                 </p>
             </div>
-            <div class="ecosystem__info-320">
+            <div class="ecosystem__info__column">
                 <h2>320+</h2>
                 <p>Długoterminowe korzyści z wdrożenia Zonifero wynoszą co najmniej 523%* w stosunku do wydanej kwoty. Lorem
                     ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor sem sit amet purus maximus, eu fringilla
@@ -284,7 +286,7 @@
         </div>
         <div class="store__starter-kit">
             <img src="./assets/images/printer.png" alt="printer">
-            <img src="./assets/images/ Lobby Starter Kit.png" alt="lobby">
+            <img src="./assets/images/ Lobby Starter Kit.png" alt="lobby starter kit">
             <img src="./assets/images/uchwyt.png" alt="handle">
         </div>
     </div>
@@ -293,56 +295,128 @@
         <div class="faq__header">
             <h3>Frequently Asked Questions</h3>
         </div>
-        <div class="faq__questions--left">
-            <p class="question">
+        <div class="faq__questions">
+            <p class="faq__questions__question">
                 Do you store any of my information?
-                <p class="answer">We do not. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt laoreet erat. Not
+                <p class="faq__questions__answer">We do not. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt laoreet erat. Not
                     helpful?
                 </p>
             </p>
-            <p class="question">
+            <p class="faq__questions__question">
                 Do you offer card readers?
-                <p class="answer"></p>
+                <p class="faq__questions__answer"></p>
             </p>
-            <p class="question">
+            <p class="faq__questions__question">
                 How do I delete my account?
-                <p class="answer"></p>
+                <p class="faq__questions__answer"></p>
             </p>
-            <p class="question">
+            <p class="faq__questions__question">
                 Can I use Zonifero anywhere in world?
-                <p class="answer"></p>
+                <p class="faq__questions__answer"></p>
             </p>
-            <p class="question">
+            <p class="faq__questions__question">
                 I’ve got a problem, how do I contact support?
-                <p class="answer"></p>
+                <p class="faq__questions__answer"></p>
             </p>
         </div>
         <div class="faq__questions--right">
-            <p class="question">
+            <p class="faq__questions__question">
                 Is Zonifero owned by SoftwareHut?
-                <p class="answer"></p>
+                <p class="faq__questions__answer"></p>
             </p>
-            <p class="question">
+            <p class="faq__questions__question">
                 How does Zonifero work?
-                <p class="answer"></p>
+                <p class="faq__questions__answer"></p>
             </p>
             How does Zonifero’s pricing work?
-            <p class="answer"></p>
+            <p class="faq__questions__answer"></p>
             </p>
-            <p class="question">
+            <p class="faq__questions__question">
                 Do you have any other fees?
-                <p class="answer"></p>
+                <p class="faq__questions__answer"></p>
             </p>
-            <p class="question">
+            <p class="faq__questions__question">
                 Which currencies do you support?
-                <p class="answer"></p>
+                <p class="faq__questions__answer"></p>
             </p>
         </div>
     </div>
     <!-- Contact -->
     <div class="contact">
+        <ul class="contact__how">
+            <li class="contact__how__option">Contact form</li>
+            <li class="contact__how__option">Call us</li>
+        </ul>
+        <form action="" method="post" class="contact__form">
+            <label for="contact__form__first-name" class="contact__form__label">First name*</label>
+            <input type="text" id=contact__form__first-name class="contact__form__first-name-input">
 
+            <label for="contact__form__family-name" class="contact__form__label">Family name*</label>
+            <input type="text" id=contact__form__first-name class="contact__form__input">
+
+            <label for="contact__form__phone-number" class="contact__form__label">Your phone</label>
+            <input type="tel" id=contact__form__phone-number class="contact__form__input">
+
+            <label for="contact__form__email" class="contact__form__label">Your email*</label>
+            <input type="email" id=contact__form__email class="contact__form__input">
+
+            <label for="contact__form__first-name" class="contact__form__label">Messege*</label>
+            <input type="text" id=contact__form__messege class="contact__form__input">
+
+            <input type="submit" value="Send messege" class="btn--blue">
+        </form>
     </div>
+    <!-- Product family -->
+    <div class="products">
+        <div class="products__product">
+            <h5>zonifero</h5>
+            <h3>Lobby</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor ligula nec fermentum tempor.</p>
+            <img src="./assets/images/Silver.png" alt="silver-phone">
+        </div>
+        <div class="products__product">
+            <h5>zonifero</h5>
+            <h3>Passport</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor ligula nec fermentum tempor.</p>
+            <img src="./assets/images/Silver.png" alt="silver-phone">
+        </div>
+        <div class="products__product">
+            <h5>zonifero</h5>
+            <h3>Services</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor ligula nec fermentum tempor.</p>
+            <img src="./assets/images/Silver.png" alt="silver-phone">
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="footer__column">
+            <h5 class="footer__column__header">Products:</h5>
+            <ul class="footer__column__list">
+                <li class="footer__column__list-item">zonifero business</li>
+                <li class="footer__column__list-item">zonifero real estate</li>
+                <li class="footer__column__list-item">zonifero lobby</li>
+                <li class="footer__column__list-item">zonifero services</li>
+                <li class="footer__column__list-item">zonifero tv</li>
+            </ul>
+        </section>
+        <section class="footer__column">
+            <h5 class="footer__column__header">Recources:</h5>
+            <ul class="footer__column__list">
+                <li class="footer__column__list-item">Documentation</li>
+                <li class="footer__column__list-item">FAQ</li>
+                <li class="footer__column__list-item">Blog</li>
+                <li class="footer__column__list-item">Media</li>
+            </ul>
+        </section>
+        <section class="footer__column">
+            <h5 class="footer__column__header">About:</h5>
+            <ul class="footer__column__list">
+                <li class="footer__column__list-item">About us</li>
+                <li class="footer__column__list-item">Company</li>
+                <li class="footer__column__list-item">Blog</li>
+            </ul>
+        </section>
+    </footer>
 </body>
 
 </html>

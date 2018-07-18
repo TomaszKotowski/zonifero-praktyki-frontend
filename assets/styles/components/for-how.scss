@@ -1,0 +1,10 @@
+@import '../mixin.scss';
+.for-who {
+  display: flex;
+  margin-left: $content-margin;
+  background-color: $background-color;
+  flex-direction: column;
+  &__list-item{
+      margin:0;
+  }
+}

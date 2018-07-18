@@ -1,0 +1,29 @@
+@import 'variables';
+@mixin font-big-headline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: $xxl-font-size;
+  color: $black;
+  line-height: 8rem;
+}
+
+@mixin font-big-headline--blue {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: $xxl-font-size;
+  color: $product-color;
+  line-height: 8rem;
+}
+
+@mixin font-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: $l-font-size;
+  color: $black;
+  line-height: 4rem;
+}
+@mixin font-list-unactive{
+    font-family: 'Poppins', sans-serif;
+    font-size: $m-font-size;
+    color: $black;
+    line-height: 2.6rem;
+}

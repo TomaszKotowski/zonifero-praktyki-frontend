@@ -2,9 +2,12 @@
 // but allowing components to change
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 @import 'variables';
-@import 'header';
-@import 'navigation';
+@import './components/header';
+@import './components/navigation';
+@import './components/overview';
+@import './components/for-how';
 html {
   box-sizing: border-box;
   font-size: 62.5%; //http://pxtoem.com/
@@ -29,4 +32,8 @@ li {
 a {
   color: $black;
   text-decoration: none;
+}
+
+.wrpper{
+  width:100%;
 }

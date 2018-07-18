@@ -1,19 +1,11 @@
-// Co do kolorów:
-// Niech kolorem podstawowym będzie #005AFF, kolorem dopełniającym #00C599, 
-// kolorem szarym: #E7E7E7 i z nich możecie wyliczać pochodne
-// Do tego kolor #FF0000 tzw "danger"
-// i #000000  oraz #ffffff jako black i white
-//---
-// 1920
-//---
 // Colors
 $white:#ffffff;
 $black:#000000;
 $product-color: #3146FF;
-$secondary-color:#01FFCB; // name picked from http://chir.ag/projects/name-that-color/#00C599
+$secondary-color:#01FFCB;
 $background-color:#F7F7F7;
 $danger:#FF0000;
-//Font-size - calculated using https://offroadcode.com/rem-calculator Base font-size=10px;
+// Font-size - calculated using https://offroadcode.com/rem-calculator Base font-size=10px;
 // font-family: 'Roboto', sans-serif;
 // 70px big-title do pierwszego <h1> i pozostałe <h2>
 // 50px title <h3>
@@ -27,4 +19,14 @@ $l-font-size:3rem;
 $xl-font-size:5rem;
 $xxl-font-size:7rem;
 // Margin left and rigth
-$content-margin:34.4rem;
+// 18.29787234042553%;
+// 81.70212765957447%;
+$content-margin:18.29787234042553%;
+// Metrics
+$x-small-metric:1rem;
+$small-metric:2rem;
+$base-metric:3rem;
+$medium-metric:4rem;
+$large-metric:6rem;
+$x-large-metric:9rem;
+$xx-large-metric:12rem;

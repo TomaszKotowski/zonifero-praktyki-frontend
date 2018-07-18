@@ -1,8 +1,8 @@
+@import '../mixin.scss';
 .nav {
   font-size: $m-font-size;
   margin-left: $content-margin;
-  display: flex; // flex-direction: row;
-  // justify-content: space-around;
+  display: flex;
   max-width: 849px;
   height: 7.1rem;
   margin-top: 5rem;
@@ -11,7 +11,11 @@
     width: 100%;
     justify-content: space-between;
   }
+  &__work-place {
+    @include font-list-unactive;
+  }
   &__link {
+    @include font-list-unactive;
     &:hover {
       font-weight: bold;
       &:after {

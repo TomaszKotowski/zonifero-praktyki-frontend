@@ -27,3 +27,10 @@
     color: $black;
     line-height: 2.6rem;
 }
+
+@mixin font-paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-size: $s-font-size;
+    color: $black;
+    line-height: 2.5rem;
+}

@@ -1,6 +1,7 @@
 @import '../mixin.scss';
 .overview {
   width: 100%;
+  background-color: $background-color;
   background-image: url('../images/first_section_bg.png');
   background-size: contain;
   background-repeat: no-repeat;

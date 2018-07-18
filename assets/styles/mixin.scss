@@ -1,7 +1,7 @@
 @import 'variables';
 @mixin font-big-headline {
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: $xxl-font-size;
   color: $black;
   line-height: 8rem;
@@ -9,7 +9,7 @@
 
 @mixin font-big-headline--blue {
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: $xxl-font-size;
   color: $product-color;
   line-height: 8rem;
@@ -21,16 +21,34 @@
   color: $black;
   line-height: 4rem;
 }
-@mixin font-list-unactive{
-    font-family: 'Poppins', sans-serif;
-    font-size: $m-font-size;
-    color: $black;
-    line-height: 2.6rem;
+
+@mixin font-alternative-section-header {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: $m-font-size;
+  color: $black;
 }
 
-@mixin font-paragraph{
-    font-family: 'Roboto', sans-serif;
-    font-size: $s-font-size;
-    color: $black;
-    line-height: 2.5rem;
+@mixin font-section-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: $s-font-size;
+  color: $black;
+  line-height: 2.5rem;
+}
+
+@mixin font-paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: $s-font-size;
+  color: $black;
+  line-height: 2.5rem;
+}
+
+@mixin font-list-unactive {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: $m-font-size;
+  color: $black;
+  line-height: 2.6rem;
 }

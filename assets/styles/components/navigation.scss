@@ -16,8 +16,10 @@
   }
   &__link {
     @include font-list-unactive;
+    font-weight: 400;
     &:hover {
       font-weight: bold;
+      cursor: pointer;
       &:after {
         content: '';
         display: block;

@@ -1,0 +1,13 @@
+@import '../mixin.scss';
+.features {
+  padding-left: $content-margin;
+  padding-top: $content-margin;
+  background-color: $background-color;
+  background-image: url('../images/Layer 78.png');
+  background-size: contain;
+  background-repeat: no-repeat;S
+  &__header {
+    @include font-section-header;
+    margin-bottom: $medium-metric;
+  }
+}

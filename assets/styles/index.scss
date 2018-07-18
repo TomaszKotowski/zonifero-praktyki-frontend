@@ -1,13 +1,15 @@
 // Apply a natural box layout model to all elements
 // but allowing components to change
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 @import 'variables';
 @import './components/header';
 @import './components/navigation';
 @import './components/overview';
 @import './components/for-how';
+@import './components/problem-solving-app';
+@import './components/features';
 html {
   box-sizing: border-box;
   font-size: 62.5%; //http://pxtoem.com/
@@ -20,7 +22,10 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-body, ul {
+body,
+ul,
+h4,
+h5 {
   margin: 0;
   padding: 0;
 }
@@ -34,6 +39,6 @@ a {
   text-decoration: none;
 }
 
-.wrpper{
-  width:100%;
+.wrpper {
+  width: 100%;
 }

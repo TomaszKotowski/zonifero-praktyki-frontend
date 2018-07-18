@@ -1,0 +1,27 @@
+@import '../mixin.scss';
+.problem-solving-app {
+  padding-left: $content-margin;
+  padding-top: $content-margin;
+  background-color: $background-color;
+  &__header {
+    @include font-section-header;
+    margin: 0;
+    margin-bottom: $medium-metric;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  &__list-item {
+    @include font-paragraph;
+    max-width: 30rem;
+    background-color: $white;
+    margin-right: $base-metric;
+    padding: $medium-metric;
+  }
+  &__list-item-header {
+    @include font-alternative-section-header;
+    margin: 5
+  }
+}

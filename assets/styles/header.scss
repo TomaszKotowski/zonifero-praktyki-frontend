@@ -15,25 +15,12 @@
     flex-direction: row;
     flex: 1 0 auto;
     height: 100%;
-    font-size: $s-font;
+    font-size: $s-font-size;
     &__link {
       height: 100%;
       display: flex;
       align-items: flex-end;
       padding-bottom: 1.6rem;
-      &--small {
-        font-size: $xs-font;
-      }
-      &--globe {
-        height: auto;
-      }
-      &--blue {
-        color: $white;
-        height: 100%;
-        background-color: $blue;
-        width: 28rem;
-        padding-left: 5.7rem;
-      }
       &__drop-down-arrow {
         margin-left: 1rem;
         margin-bottom: 0.5rem;
@@ -44,6 +31,19 @@
         padding: 3px;
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
+      }
+      &--small {
+        font-size: $xs-font-size;
+      }
+      &--globe {
+        height: auto;
+      }
+      &--blue {
+        color: $white;
+        height: 100%;
+        background-color: $product-color;
+        width: 28rem;
+        padding-left: 5.7rem;
       }
     }
   }

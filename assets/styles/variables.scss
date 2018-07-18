@@ -9,9 +9,9 @@
 // Colors
 $white:#ffffff;
 $black:#000000;
-$blue: #005AFF;
-$caribbean-green:#00C599; // name picked from http://chir.ag/projects/name-that-color/#00C599
-$gray:#E7E7E7;
+$product-color: #3146FF;
+$secondary-color:#01FFCB; // name picked from http://chir.ag/projects/name-that-color/#00C599
+$background-color:#F7F7F7;
 $danger:#FF0000;
 //Font-size - calculated using https://offroadcode.com/rem-calculator Base font-size=10px;
 // font-family: 'Roboto', sans-serif;
@@ -20,11 +20,11 @@ $danger:#FF0000;
 // 30px sub-title <h4>
 // 19px bold <h5>
 // 17px normal <p>
-$xs-font:1.3rem;
-$s-font:1.7rem;
-$m-font:1.9rem;
-$l-font:3rem;
-$xl-font:5rem;
-$xxl-font:7rem;
+$xs-font-size:1.3rem;
+$s-font-size:1.7rem;
+$m-font-size:1.9rem;
+$l-font-size:3rem;
+$xl-font-size:5rem;
+$xxl-font-size:7rem;
 // Margin left and rigth
 $content-margin:34.4rem;

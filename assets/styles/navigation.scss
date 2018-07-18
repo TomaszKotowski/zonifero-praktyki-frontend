@@ -1,17 +1,27 @@
 .nav {
-  font-size: $m-font;
+  font-size: $m-font-size;
   margin-left: $content-margin;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: flex; // flex-direction: row;
+  // justify-content: space-around;
   max-width: 849px;
   height: 7.1rem;
   margin-top: 5rem;
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
   &__link {
     &:hover {
       font-weight: bold;
-      border-bottom: 1px red solid;
-      text-decoration-line: underline;
+      &:after {
+        content: '';
+        display: block;
+        height: 3.5px;
+        width: 50%;
+        background-color: $secondary-color;
+        margin-top: 0.7rem;
+      }
     }
   }
 }

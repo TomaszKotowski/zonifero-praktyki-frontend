@@ -1,0 +1,27 @@
+@import '../mixin.scss';
+.download {
+  width: $content-width;
+  height: $xx-large-metric;
+  margin: auto;
+  margin-top: $xx-large-metric;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__header {
+    @include font-section-header;
+    font-weight: bold;
+  }
+  &__file {
+    @include font-paragraph;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    cursor: pointer;
+    height: 50%;
+    padding: $small-metric $large-metric;
+    border: none;
+    color: $white;
+    background-color: $product-color; //   align-self: stretch;
+  }
+}

@@ -6,22 +6,15 @@ $secondary-color:#01FFCB;
 $background-color:#F7F7F7;
 $danger:#FF0000;
 // Font-size - calculated using https://offroadcode.com/rem-calculator Base font-size=10px;
-// font-family: 'Roboto', sans-serif;
-// 70px big-title do pierwszego <h1> i pozostałe <h2>
-// 50px title <h3>
-// 30px sub-title <h4>
-// 19px bold <h5>
-// 17px normal <p>
 $xs-font-size:1.3rem;
 $s-font-size:1.7rem;
 $m-font-size:1.9rem;
 $l-font-size:3rem;
 $xl-font-size:5rem;
 $xxl-font-size:7rem;
-// Margin left and rigth
-// 18.29787234042553%;
-// 81.70212765957447%;
-$content-margin:18.29787234042553%;
+// Margin left or rigth
+$content-margin:18%; //34.4rem
+$content-width:64%;
 // Metrics
 $x-small-metric:1rem;
 $small-metric:2rem;
@@ -30,3 +23,6 @@ $medium-metric:4rem;
 $large-metric:6rem;
 $x-large-metric:9rem;
 $xx-large-metric:12rem;
+// Column width
+$col-2:45%;
+$col-3:30%;

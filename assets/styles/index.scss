@@ -7,9 +7,12 @@
 @import './components/header';
 @import './components/navigation';
 @import './components/overview';
-@import './components/for-how';
+@import './components/for-who';
 @import './components/problem-solving-app';
 @import './components/features';
+@import './components/specs-example';
+@import './components/specs-list';
+@import './components/specs-info';
 html {
   box-sizing: border-box;
   font-size: 62.5%; //http://pxtoem.com/
@@ -24,6 +27,7 @@ html {
 
 body,
 ul,
+h3,
 h4,
 h5 {
   margin: 0;

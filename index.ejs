@@ -14,10 +14,9 @@
     <header class="header">
         <div class="header__logo">
             <img src="./assets/images/logo.png" alt="logo">
-
         </div>
         <nav class="header__nav">
-            <!-- Change the first 3 link into li elements -->
+            <!-- *Change the first 3 link into li elements -->
             <a link='#' class="header__nav__link header__nav__link--small">Zonifero products</a>
             <a link='#' class="header__nav__link header__nav__link--small">Store</a>
             <a link='#' class="header__nav__link header__nav__link--small">Blog</a>
@@ -133,77 +132,85 @@
     </div>
     <!-- Features -->
     <div class="features">
-        <!-- <img src="./assets/images/Layer 78.png" alt=""> to jako background image z css -->
-        <h4 class="features__header">Features</h4>
-        <h3>Hot desk booking. Like a pro.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique velit id finibus convallis. Fusce eget purus
-            aliquet libero euismod blandit sed eu enim. Curabitur eget arcu ut augue.</p>
-        <img src="./assets/images/Silver.png" alt="silver-phone">
-        <button>View and download full specs</button>
+        <h4 class="features__section-header">Features</h4>
+        <section class="features__wrapper">
+            <img class="features__phone" src="./assets/images/Silver.png" alt="silver-phone">
+            <div class="features__image-section"></div>
+            <div class="features__blue-background">
+                <div class="features__text-section">
+                    <h3 class="features__header">Hot desk booking. Like a pro.</h3>
+                    <p class="features__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique velit id finibus convallis. Fusce
+                        eget purus aliquet libero euismod blandit sed eu enim. Curabitur eget arcu ut augue.</p>
+                </div>
+                <button class="features__button">View and download full specs</button>
+            </div>
+        </section>
     </div>
     <!-- Specs -->
-    <div class="specs">
-        <div class="room-booking">
-            <h4>Room booking</h4>
-            <p>zonifero business supports meeting rooms booking. Reservations can be made from the smartphone, tablet in front
+    <div class="specs-example">
+        <div class="specs-example__text">
+            <h4 class="specs-example__headline">Room booking</h4>
+            <p class="specs-example__description">zonifero business supports meeting rooms booking. Reservations can be made from the smartphone, tablet in front
                 of the room or directly from the calendar in Office365 or G Suite. Room reservations can also be made in
                 companies that are not familiar with Office 365 or G Suite services.</p>
-            <img src="./assets/images/Space Gray.png" alt="">
-            <div class="specs__room-info">
-                <p>
-                    <span>
-                        unlimited
-                    </span>
-                    rooms
-                </p>
-                <p>
-                    <span>
-                        unlimited
-                    </span>
-                    employees
-                </p>
-                <p>
-                    <span>
-                        10
-                    </span>
-                    floors
-                </p>
-            </div>
-            <div class="drop-down">
-                <ul>
-                    <li class="drop-down__item">Hot-desk booking</li>
-                    <li class="drop-down__item">Status of employees</li>
-                    <li class="drop-down__item">Request managment</li>
-                    <li class="drop-down__item">Hot-desk booking</li>
-                    <li class="drop-down__item">Status of employees</li>
-                    <li class="drop-down__item">Request managment</li>
-                    <li class="drop-down__item">Hot-desk booking</li>
-                    <li class="drop-down__item">Status of employees</li>
-                    <li class="drop-down__item">Request managment</li>
-                </ul>
-            </div>
-            <div class="specs__add-info">
-                <div class="system-require">
-                    <h4>System requirements</h4>
-                    <p>zonifero business supports meeting rooms booking. Reservations can be made from the smartphone, tablet
-                        in front of the room or directly from the calendar in Office365 or G Suite. Room reservations can
-                        also be made in companies that are not familiar with Office 365 or G Suite services.</p>
-                </div>
-                <div class="support">
-                    <h4>24/7 Support</h4>
-                    <p>zonifero business supports meeting rooms booking. Reservations can be made from the smartphone, tablet
-                        in front of the room or directly from the calendar in Office365 or G Suite. Room reservations can
-                        also be made in companies that are not familiar with Office 365 or G Suite services.</p>
-                </div>
-                <div class="download">
-                    <h5>Download</h5>
-                    <p>zonifero WorkPlace brochure and specification</p>
-                    <p>PDF</p>
-                    <p>19.34 MB</p>
-                    <button>Download</button>
-                </div>
-            </div>
         </div>
+        <img class="specs-example__phones" src="./assets/images/Space Gray.png" alt="">
+        <ul class="specs-example__info">
+            <li class="specs-example__info-item">
+                <span class="specs-example__info-item specs-example__info-item--bold">
+                    unlimited
+                </span>
+                rooms
+            </li>
+            <li class="specs-example__info-item">
+                <span class="specs-example__info-item specs-example__info-item--bold">
+                    unlimited
+                </span>
+                employees
+            </li>
+            <li class="specs-example__info-item">
+                <span class="specs-example__info-item specs-example__info-item--bold">
+                    10
+                </span>
+                floors
+            </li>
+        </ul>
+    </div>
+    <div class="specs-list">
+        <ul class="specs-list__list">
+            <li class="specs-list__list-item">Hot-desk booking</li>
+            <li class="specs-list__list-item">Status of employees</li>
+            <li class="specs-list__list-item">Request managment</li>
+            <li class="specs-list__list-item">Hot-desk booking</li>
+            <li class="specs-list__list-item">Status of employees</li>
+            <li class="specs-list__list-item">Request managment</li>
+            <li class="specs-list__list-item">Hot-desk booking</li>
+            <li class="specs-list__list-item">Status of employees</li>
+            <li class="specs-list__list-item">Request managment</li>
+        </ul>
+    </div>
+    <div class="specs-info">
+        <ul class="specs-info__list">
+            <li class="specs-info__list-item">
+                <h4 class="specs-info__item-header">System requirements</h4>
+                zonifero business supports meeting rooms booking. Reservations can be made from the smartphone, tablet in front of the room
+                or directly from the calendar in Office365 or G Suite. Room reservations can also be made in companies that
+                are not familiar with Office 365 or G Suite services.
+            </li>
+            <li class="specs-info__list-item">
+                <h4 class="specs-info__item-header">24/7 Support</h4>
+                zonifero business supports meeting rooms booking. Reservations can be made from the smartphone, tablet in front of the room
+                or directly from the calendar in Office365 or G Suite. Room reservations can also be made in companies that
+                are not familiar with Office 365 or G Suite services.
+            </li>
+        </ul>
+    </div>
+    <div class="download">
+        <h5>Download</h5>
+        <p>zonifero WorkPlace brochure and specification</p>
+        <p>PDF</p>
+        <p>19.34 MB</p>
+        <button>Download</button>
     </div>
     <!-- Bring to 21st -->
     <div class="bring-to-21st">

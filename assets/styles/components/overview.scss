@@ -22,9 +22,8 @@
   }
   &__app-links {
     display: flex;
-  }
-  &__app-link {
-    flex: 0.07 0 auto;
+    justify-content: space-between;
+    width: $col-2;
   }
   &__app-badge {
     max-height: 4.59rem;
@@ -37,5 +36,6 @@
   }
   &__hand {
     height: 90%;
+    margin-bottom: -$x-large-metric;
   }
 }

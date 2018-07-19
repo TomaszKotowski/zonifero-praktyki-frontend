@@ -1,15 +1,20 @@
 @import '../mixin.scss';
 .for-who {
-  padding-left: $content-margin;
+  // padding-left: $content-margin;
+  padding-top: $large-metric;
   background-color: $background-color;
+  display: flex;
+  justify-content: center;
   &__list {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    width: $content-width; 
+    justify-content: space-between;
   }
   &__list-item {
     @include font-paragraph;
-    margin-right: $xx-large-metric;
     text-justify: auto;
+    width:$col-3;
   }
   &__list-title {
     @include font-description;

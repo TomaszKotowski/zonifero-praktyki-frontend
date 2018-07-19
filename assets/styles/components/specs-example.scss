@@ -1,0 +1,25 @@
+@import '../mixin.scss';
+.specs-example {
+  background-color: $white;
+  padding-left: $content-margin;
+  padding-right: $content-margin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__text {
+    width: $col-3;
+  }
+  &__headline {
+    @include font-description;
+  }
+  &__description {
+    @include font-paragraph;
+  }
+  &__info {
+    @include font-paragraph;
+    &-item--bold {
+      font-weight: bold;
+    }
+  }
+}

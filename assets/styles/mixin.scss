@@ -15,6 +15,14 @@
   line-height: 8rem;
 }
 
+@mixin font-small-headline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: $xl-font-size;
+  color: $black;
+  line-height: 8rem;
+}
+
 @mixin font-description {
   font-family: 'Roboto', sans-serif;
   font-size: $l-font-size;
@@ -50,5 +58,13 @@
   font-weight: 700;
   font-size: $m-font-size;
   color: $black;
+  line-height: 2.6rem;
+}
+
+@mixin font-list-active {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: $m-font-size;
+  color: $product-color;
   line-height: 2.6rem;
 }

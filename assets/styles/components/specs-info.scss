@@ -1,0 +1,21 @@
+@import '../mixin.scss';
+.specs-info {
+  padding-top: $x-large-metric;
+  display: flex;
+  justify-content: center;
+  &__list {
+    @include font-paragraph;
+    width: $content-width;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__list-item {
+    width: $col-2;
+  }
+  &__item-header {
+    @include font-alternative-section-header;
+    margin-bottom: $small-metric;
+  }
+}

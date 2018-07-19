@@ -1,0 +1,35 @@
+@import '../mixin.scss';
+.specs-list {
+  @include font-list-unactive;
+  display: flex;
+  justify-content: center;
+  &__list {
+    width: $content-width;
+    margin-top: $small-metric;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__list-item {
+    height: $large-metric;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list-item:hover {
+    cursor: pointer;
+    color: $product-color;
+  }
+  &__list-item:after {
+    content: ""; // margin-left: 1rem;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-width: 0px 3px 3px 0px;
+    padding: 3px;
+    transform: rotate(45deg); // transform: translate()
+  }
+}

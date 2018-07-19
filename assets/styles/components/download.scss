@@ -15,6 +15,7 @@
     @include font-paragraph;
     display: flex;
     justify-content: space-between;
+    align-content: center;
   }
   &__button {
     cursor: pointer;

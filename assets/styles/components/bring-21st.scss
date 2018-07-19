@@ -1,0 +1,47 @@
+@import '../mixin.scss';
+.bring-to-21st {
+  padding-top: $x-large-metric;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__head {
+    padding-left: $content-margin;
+    display: flex;
+    align-items: flex-start;
+    height: 76.1rem;
+  }
+  &__text {
+    align-self: flex-end;
+    margin-top: 22rem;
+  }
+  &__header {
+    @include font-big-headline;
+    margin: 0;
+  }
+  &__description {
+    @include font-description;
+    margin: 0;
+    margin-top: $large-metric;
+  }
+  &__features {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    &-list {
+      width: $content-width;
+      display: flex;
+      align-content: center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top:$large-metric;
+    }
+    &-list-item {
+      @include font-paragraph;
+      width: $col-2;
+    }
+    &-header {
+      @include font-list-unactive;
+    }
+  }
+}

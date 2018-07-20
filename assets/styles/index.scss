@@ -16,8 +16,10 @@
 @import './components/download';
 @import './components/bring-21st';
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; //http://pxtoem.com/
+  box-sizing: border-box; //---
+  // Font-size - calculated using https://offroadcode.com/rem-calculator
+  // Base font-size=10px; http://pxtoem.com/ 
+  font-size: 62.5%;
 }
 
 *,

@@ -1,8 +1,10 @@
 // Mobile first
 .bring-to-21st {
   @include grid-container;
-  @include grid-column(12);
   overflow: hidden;
+  &__wrapper{
+    @include grid-column(12);
+  }
   &__head {
     display: flex;
     flex-direction: column;
@@ -19,6 +21,10 @@
     margin-top: $medium-metric;
     display: flex;
     justify-content: center;
+    &-box {
+      height: 100%;
+      width: 100%;
+    }
   }
   &__features {
     &-list-item {
@@ -38,16 +44,18 @@
 // Desktop
 @media(min-width: $mobile-width) {
   .bring-to-21st {
-    @include grid-visual;
-    @include grid-column(12, $grid-desktop);
+    @include grid-container;
     overflow: visible;
+    &__wrapper{
+      @include grid-column(12,$grid-desktop);
+    }
     &__head {
       @include grid-container;
       display: flex;
-      flex-direction: row; 
+      flex-direction: row;
     }
     &__text {
-      border: 1px solid red;
+      margin-top: 22.6rem;
       width: 60%;
     }
     &__header {
@@ -59,10 +67,9 @@
       margin: 0;
     }
     &__image {
-      margin-top:0;
-      border: 1px solid red;
+      margin-top: 0; // border: 1px solid red;
       height: 100%;
-      width: 40%; 
+      width: 40%;
       display: block;
     }
     &__features {
@@ -80,7 +87,8 @@
       }
     }
   }
-} 
+}
+
 // ---
 // Old styles only for desktop
 // ---

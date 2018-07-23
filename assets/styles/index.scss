@@ -7,7 +7,7 @@
 @import 'variables';
 @import 'mixin';
 @import 'neat';
-@import 'custom-grid';
+@import 'grid-desktop';
 @import 'components/header';
 @import 'components/navigation';
 @import 'components/overview';
@@ -19,6 +19,7 @@
 @import 'components/specs-info';
 @import 'components/download';
 @import 'components/bring-21st';
+@import 'components/contact-form';
 html {
   box-sizing: border-box; //---
   // Font-size - calculated using https://offroadcode.com/rem-calculator

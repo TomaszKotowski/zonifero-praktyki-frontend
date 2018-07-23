@@ -1,0 +1,15 @@
+// Mobile
+.contact {
+//   @include grid-container;
+//   @include grid-visual;
+//   @include grid-column(12);
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+
+// Desktop
+@media(min-width: $mobile-width) {
+  .contact {}
+  ;
+}

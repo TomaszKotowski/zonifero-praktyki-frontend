@@ -90,3 +90,10 @@
   line-height: 2.6rem;
 }
 
+@mixin font-input-mobile {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  color: $black;
+  line-height: 3rem;
+}
+

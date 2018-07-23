@@ -1,15 +1,95 @@
 // Mobile
 .contact {
-//   @include grid-container;
-//   @include grid-visual;
-//   @include grid-column(12);
+  @include grid-container;
+  @include grid-column(12);
   margin-top: 12rem;
   display: flex;
   flex-direction: column;
+  &__list {
+    @include font-section-header;
+    display: flex;
+    margin-bottom: $large-metric;
+  }
+  &__option {
+    padding-right: 3rem;
+    &--active {
+      font-weight: bold;
+      &:after {
+        content: '';
+        display: block;
+        height: 3.5px;
+        width: 50%;
+        background-color: $secondary-color;
+      }
+    }
+  }
+  &__form {
+    &-mail {
+      @include font-section-header;
+      font-size: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &-label {
+      padding-top: 4rem;
+    }
+    &-input {
+      @include font-input-mobile;
+      height: 5.2rem;
+      padding: 14px 1px;
+      width: 100%;
+      border: none;
+      border-bottom: dotted 1px $black;
+    }
+    &-textarea {
+      @include font-input-mobile;
+      height: $xx-large-metric;
+      padding: 14px 1px;
+      width: 100%;
+      border: none;
+      border-bottom: dotted 1px $black;
+    }
+    &-button {
+      color: $white;
+      background-color: $product-color;
+      align-self: center;
+      text-align: center;
+      margin-top: 5rem;
+      padding: $small-metric $medium-metric;
+    }
+  }
 }
 
 // Desktop
 @media(min-width: $mobile-width) {
-  .contact {}
-  ;
+  .contact {
+    &__wrapper {
+      @include grid-column(12, $grid-desktop);
+    }
+    &__list {
+      @include font-section-header;
+      display: flex;
+      justify-content: center;
+      margin-bottom: $x-large-metric;
+    }
+    &__form {
+      &-mail {
+        @include font-section-header;
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      &-label {
+        width: 48%;
+        &--textarea {
+          @include grid-column(12);
+          width: 100%;
+          margin-left:0;
+        }
+      }
+    }
+  }
 }

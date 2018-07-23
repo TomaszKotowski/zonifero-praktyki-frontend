@@ -8,15 +8,41 @@
   &__list {
     display: flex;
     flex-direction: row;
-    width: $content-width; 
+    width: $content-width;
     justify-content: space-between;
   }
   &__list-item {
     @include font-paragraph;
     text-justify: auto;
-    width:$col-3;
+    width: $col-3;
   }
   &__list-title {
     @include font-description;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .for-who {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      justify-content: space-between;
+    }
+    &__list-item {
+      width: 100%;
+      font-size: 3rem;
+      line-height: 5.5rem;
+      &--unactive {
+        display: none;
+      }
+    }
+    &__list-title {
+      font-size: 5rem;
+      line-height: 14rem;
+    }
   }
 }

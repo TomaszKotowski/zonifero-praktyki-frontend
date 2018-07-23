@@ -8,6 +8,9 @@ const IS_DEV = (process.env.NODE_ENV === 'dev');
 const dirNode = 'node_modules';
 const dirApp = path.join(__dirname, 'app');
 const dirAssets = path.join(__dirname, 'assets');
+// const neat = require('bourbon-neat').includePaths;
+const neat = require('node-neat').includePaths
+
 
 const appHtmlTitle = 'Zonifero-praktyki';
 
@@ -79,7 +82,7 @@ module.exports = {
                         loader: 'sass-loader',
                         options: {
                             sourceMap: IS_DEV,
-                            includePaths: [dirAssets]
+                            includePaths: [dirAssets, neat]
                         }
                     }
                 ]

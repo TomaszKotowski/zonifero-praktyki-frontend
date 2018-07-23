@@ -1,47 +1,132 @@
-@import '../mixin.scss';
+// Mobile first
 .bring-to-21st {
-  padding-top: $x-large-metric;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include grid-container;
+  @include grid-column(12);
+  overflow: hidden;
   &__head {
-    padding-left: $content-margin;
     display: flex;
-    align-items: flex-start;
-    height: 76.1rem;
-  }
-  &__text {
-    align-self: flex-end;
-    margin-top: 22rem;
+    flex-direction: column;
   }
   &__header {
-    @include font-big-headline;
-    margin: 0;
+    @include font-big-headline-mobile;
+    margin-bottom: 7.2rem;
   }
   &__description {
-    @include font-description;
-    margin: 0;
-    margin-top: $large-metric;
+    @include font-description-mobile;
   }
-  &__features {
+  &__image {
+    width: 100%;
+    margin-top: $medium-metric;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    &-list {
-      width: $content-width;
-      display: flex;
-      align-content: center;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-top:$large-metric;
-    }
+  }
+  &__features {
     &-list-item {
       @include font-paragraph;
-      width: $col-2;
+      @include grid-column(12);
+      &--unactive {
+        display: none;
+      }
     }
     &-header {
-      @include font-list-unactive;
+      font-size: 1.9rem;
+      margin-bottom: 4rem;
     }
   }
 }
+
+// Desktop
+@media(min-width: $mobile-width) {
+  .bring-to-21st {
+    @include grid-visual;
+    @include grid-column(12, $grid-desktop);
+    overflow: visible;
+    &__head {
+      @include grid-container;
+      display: flex;
+      flex-direction: row; 
+    }
+    &__text {
+      border: 1px solid red;
+      width: 60%;
+    }
+    &__header {
+      @include font-big-headline;
+      margin-bottom: 7.2rem;
+    }
+    &__description {
+      @include font-description;
+      margin: 0;
+    }
+    &__image {
+      margin-top:0;
+      border: 1px solid red;
+      height: 100%;
+      width: 40%; 
+      display: block;
+    }
+    &__features {
+      &-list-item {
+        @include font-paragraph;
+        @include grid-column(6);
+        margin-top: $x-large-metric;
+        &--unactive {
+          display: inherit;
+        }
+      }
+      &-header {
+        font-size: 1.9rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+} 
+// ---
+// Old styles only for desktop
+// ---
+// .bring-to-21st {
+//   padding-top: $x-large-metric;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   &__head {
+//     padding-left: $content-margin;
+//     display: flex;
+//     align-items: flex-start;
+//     height: 76.1rem;
+//   }
+//   &__text {
+//     align-self: flex-end;
+//     margin-top: 22rem;
+//   }
+//   &__header {
+//     @include font-big-headline;
+//     margin: 0;
+//   }
+//   &__description {
+//     @include font-description;
+//     margin: 0;
+//     margin-top: $large-metric;
+//   }
+//   &__features {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: row;
+//     &-list {
+//       width: $content-width;
+//       display: flex;
+//       align-content: center;
+//       flex-direction: row;
+//       justify-content: space-between;
+//       padding-top: $large-metric;
+//     }
+//     &-list-item {
+//       @include font-paragraph;
+//       width: $col-2;
+//     }
+//     &-header {
+//       @include font-list-unactive;
+//     }
+//   }
+// }

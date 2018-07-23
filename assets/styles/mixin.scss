@@ -1,4 +1,3 @@
-@import 'variables';
 @mixin font-big-headline {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -14,6 +13,15 @@
   color: $product-color;
   line-height: 8rem;
 }
+
+@mixin font-big-headline-mobile {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: $black;
+  line-height: 5rem;
+}
+
 @mixin font-big-headline-mobile--blue {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -35,6 +43,12 @@
   font-size: 3rem;
   color: $black;
   line-height: 4rem;
+}
+@mixin font-description-mobile {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  color: $black;
+  line-height: 3.2rem;
 }
 
 @mixin font-alternative-section-header {
@@ -75,3 +89,4 @@
   color: $product-color;
   line-height: 2.6rem;
 }
+

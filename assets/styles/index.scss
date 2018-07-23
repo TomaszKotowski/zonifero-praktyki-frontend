@@ -1,20 +1,24 @@
 // Apply a natural box layout model to all elements
 // but allowing components to change
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+// @import '~bourbon-neat/core/_neat.scss';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 @import 'variables';
-@import './components/header';
-@import './components/navigation';
-@import './components/overview';
-@import './components/for-who';
-@import './components/problem-solving-app';
-@import './components/features';
-@import './components/specs-example';
-@import './components/specs-list';
-@import './components/specs-info';
-@import './components/download';
-@import './components/bring-21st';
+@import 'mixin';
+@import 'neat';
+@import 'custom-grid';
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/overview';
+@import 'components/for-who';
+@import 'components/problem-solving-app';
+@import 'components/features';
+@import 'components/specs-example';
+@import 'components/specs-list';
+@import 'components/specs-info';
+@import 'components/download';
+@import 'components/bring-21st';
 html {
   box-sizing: border-box; //---
   // Font-size - calculated using https://offroadcode.com/rem-calculator
@@ -31,6 +35,7 @@ html {
 
 body,
 ul,
+h2,
 h3,
 h4,
 h5 {
@@ -47,6 +52,6 @@ a {
   text-decoration: none;
 }
 
-.wrpper {
-  width: 100%;
-}
+// .wrpper {
+//   width: 100%;
+// }

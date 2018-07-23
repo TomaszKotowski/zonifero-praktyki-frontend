@@ -20,6 +20,7 @@
 @import 'components/download';
 @import 'components/bring-21st';
 @import 'components/contact-form';
+@import 'components/footer';
 html {
   box-sizing: border-box; //---
   // Font-size - calculated using https://offroadcode.com/rem-calculator
@@ -52,7 +53,3 @@ a {
   color: $black;
   text-decoration: none;
 }
-
-// .wrpper {
-//   width: 100%;
-// }

@@ -1,10 +1,12 @@
 // Mobile
 .contact {
   @include grid-container;
-  @include grid-column(12);
-  margin-top: 12rem;
-  display: flex;
-  flex-direction: column;
+  &__wrapper {
+    @include grid-column(12);
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+  }
   &__list {
     @include font-section-header;
     display: flex;
@@ -36,19 +38,19 @@
     }
     &-input {
       @include font-input-mobile;
+      @include dotted-line;
       height: 5.2rem;
       padding: 14px 1px;
       width: 100%;
       border: none;
-      border-bottom: dotted 1px $black;
     }
     &-textarea {
       @include font-input-mobile;
+      @include dotted-line;
       height: $xx-large-metric;
       padding: 14px 1px;
       width: 100%;
       border: none;
-      border-bottom: dotted 1px $black;
     }
     &-button {
       color: $white;
@@ -56,6 +58,7 @@
       align-self: center;
       text-align: center;
       margin-top: 5rem;
+      border:none;
       padding: $small-metric $medium-metric;
     }
   }
@@ -87,7 +90,7 @@
         &--textarea {
           @include grid-column(12);
           width: 100%;
-          margin-left:0;
+          margin-left: 0;
         }
       }
     }

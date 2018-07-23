@@ -44,6 +44,7 @@
   color: $black;
   line-height: 4rem;
 }
+
 @mixin font-description-mobile {
   font-family: 'Roboto', sans-serif;
   font-size: 2.2rem;
@@ -97,3 +98,11 @@
   line-height: 3rem;
 }
 
+// Dotted border line for form elements
+$dottedLineSpacing: 10;
+@mixin dotted-line($color: #000, $alignment: bottom) {
+  background-image: linear-gradient(to right, $color 0%, $color (100% / $dottedLineSpacing), transparent (100% / $dottedLineSpacing));
+  background-position: 0 $alignment;
+  background-size: ($dottedLineSpacing + px) 1px;
+  background-repeat: repeat-x;
+}

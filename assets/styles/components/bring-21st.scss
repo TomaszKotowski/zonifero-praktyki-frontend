@@ -2,7 +2,7 @@
 .bring-to-21st {
   @include grid-container;
   overflow: hidden;
-  &__wrapper{
+  &__wrapper {
     @include grid-column(12);
   }
   &__head {
@@ -46,8 +46,8 @@
   .bring-to-21st {
     @include grid-container;
     overflow: visible;
-    &__wrapper{
-      @include grid-column(12,$grid-desktop);
+    &__wrapper {
+      @include grid-column(12, $grid-desktop);
     }
     &__head {
       @include grid-container;

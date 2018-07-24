@@ -1,5 +1,5 @@
+// Mobile
 .overview {
-  @include grid-container;
   display: flex;
   background-color: $background-color;
   background-image: url('../images/desks.png');
@@ -23,15 +23,15 @@
     max-width: 100%;
     max-height: 100%;
     margin-bottom: -$xx-large-metric;
-    margin-left:2.5rem;
+    margin-left: 2.5rem;
   }
   &__info {
     @include font-description-mobile;
     padding: 0 $small-metric;
     background-color: $background-color;
   }
-  &__description{
-    margin:0 0 $medium-metric;
+  &__description {
+    margin: 0 0 $medium-metric;
     padding-top: $medium-metric;
   }
   &__app {
@@ -50,6 +50,66 @@
     &-badge {
       background-color: none;
       clip-path: inset(15% 5% 15% 5%);
+    }
+  }
+}
+
+//  Desktop
+@media (min-width: $mobile-width) {
+  .overview {
+    @include grid-container;
+    background-image: none;
+    background-color: $background-color;
+    background-image: url('../images/first_section_bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0;
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-left: $content-margin;
+      height: 77.8rem;
+    }
+    &__title {
+      @include font-big-headline--blue;
+      display: inline-block;
+      margin-top: $xx-large-metric;
+      padding: 0;
+      width: 40%;
+      max-height: 100%;
+    }
+    &__image {
+      // @include grid-column(4);
+      // @include grid-push(6); 
+      order: 2; // margin: $medium-metric 0 0;
+      // width: 20%;
+    }
+    &__info {
+      @include font-description;
+      width: 40%;
+      max-height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    &__description {
+      padding: 0;
+      margin: 0;
+    }
+    &__app {
+      &-links {
+        display: flex;
+        margin-top: $large-metric;
+        width: 42rem;
+        &-link {
+          display: flex;
+          justify-content: center;
+          height: 7rem;
+          background-color: $black;
+          overflow: hidden;
+        } // width:60%;
+      }
     }
   }
 }

@@ -23,9 +23,10 @@
 
 @media (max-width: $mobile-width) {
   .for-who {
-    padding-top: 0;
     display: flex;
     justify-content: center;
+    margin-top: 14rem;
+    padding-top: 0;
     &__list {
       display: flex;
       flex-direction: column;
@@ -34,15 +35,14 @@
     }
     &__list-item {
       width: 100%;
-      font-size: 3rem;
-      line-height: 5.5rem;
       &--unactive {
         display: none;
       }
     }
     &__list-title {
-      font-size: 5rem;
-      line-height: 14rem;
+      @include font-alternative-section-header;
+      font-size: 2.5rem;
+      line-height: 4rem;
     }
   }
 }

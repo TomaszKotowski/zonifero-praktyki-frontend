@@ -1,125 +1,188 @@
-@import '../mixin.scss';
 .overview {
-  width: 100%;
-  background-color: $background-color;
-  background-image: url('../images/first_section_bg.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+  @include grid-container;
   display: flex;
-  overflow: hidden;
-  &__hero {
-    margin-left: $content-margin;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 77.8rem;
-  }
-  &__text {
-    align-self: center;
-  }
+  background-color: $background-color;
+  background-image: url('../images/desks.png');
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center 32rem;
+  background-origin: content-box;
   &__title {
-    @include font-big-headline--blue;
-    margin: 0;
-    width: $col-2;
-  }
-  &__info {
-    width: $col-2;
-  }
-  &__description {
-    @include font-description;
-    background-color: none;
-  }
-  &__app-links {
-    display: flex;
-    justify-content: space-between;
-    width: $col-2;
-  }
-  &__app-badge {
-    height: 4.59rem;
-    margin-right: $large-metric;
+    @include font-big-headline-mobile--blue;
+    word-wrap: break-word;
+    margin: $large-metric 0 $base-metric;
+    padding: 0 $small-metric;
   }
   &__image {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    order: 3;
-    flex: 1 1 auto; // position: relative;
-    // top: -35rem;
-    // align-self: flex-end;
+    align-items: flex-end;
+    padding: 0 $small-metric;
+    overflow: hidden;
   }
   &__hand {
-    margin-bottom: -12rem; // height: 90%; // margin-bottom: -$x-large-metric;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: -$xx-large-metric;
+    margin-left:2.5rem;
+  }
+  &__info {
+    @include font-description-mobile;
+    padding: 0 $small-metric;
+    background-color: $background-color;
+  }
+  &__description{
+    margin:0 0 $medium-metric;
+    padding-top: $medium-metric;
+  }
+  &__app {
+    &-links {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-link {
+      display: flex;
+      justify-content: center;
+      width: 15.2rem;
+      height: 5.2rem;
+      background-color: $black;
+      overflow: hidden;
+    }
+    &-badge {
+      background-color: none;
+      clip-path: inset(15% 5% 15% 5%);
+    }
   }
 }
 
-@media (max-width: $mobile-width) {
-  .overview {
-    display: flex;
-    background-size: 200%; // background-image: none;
-    background-position: right top; // background-image: none;
-    &__wrapper-mobile {
-      background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: 90%;
-    }
-    &__hero {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0;
-      flex-direction: column;
-      overflow: hidden;
-      height: 110rem;
-    }
-    &__title {
-      @include font-big-headline--blue;
-      margin: 0;
-      align-self: flex-start;
-      width: 90%;
-      margin-left: $medium-metric;
-    }
-    &__image {
-      order: 0;
-    }
-    &__hand {
-      margin-bottom: -26rem;
-    }
-    &__info {
-      width: 100%;
-      background-color: $white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__description {
-      background-color: $background-color;
-      width: 90%;
-      padding-top: $large-metric;
-      margin: 0;
-    }
-    &__app-links {
-      background-color: $background-color;
-      width: 100%;
-      height: 18rem;
-      display: flex;
-      justify-content: space-around;
-      margin-top: 3rem;
-    }
-    &__app-badge {
-      height: $x-large-metric;
-      margin: 0;
-    }
-    &__text {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-}
+// @import '../mixin.scss';
+// .overview {
+//   width: 100%;
+//   background-color: $background-color;
+//   background-image: url('../images/first_section_bg.png');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   display: flex;
+//   overflow: hidden;
+//   &__hero {
+//     margin-left: $content-margin;
+//     display: flex;
+//     justify-content: center;
+//     overflow: hidden;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//     height: 77.8rem;
+//   }
+//   &__text {
+//     align-self: center;
+//   }
+//   &__title {
+//     @include font-big-headline--blue;
+//     margin: 0;
+//     width: $col-2;
+//   }
+//   &__info {
+//     width: $col-2;
+//   }
+//   &__description {
+//     @include font-description;
+//     background-color: none;
+//   }
+//   &__app-links {
+//     display: flex;
+//     justify-content: space-between;
+//     width: $col-2;
+//   }
+//   &__app-badge {
+//     height: 4.59rem;
+//     margin-right: $large-metric;
+//   }
+//   &__image {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     order: 3;
+//     flex: 1 1 auto; // position: relative;
+//     // top: -35rem;
+//     // align-self: flex-end;
+//   }
+//   &__hand {
+//     margin-bottom: -12rem; // height: 90%; // margin-bottom: -$x-large-metric;
+//   }
+// }
+// @media (max-width: $mobile-width) {
+//   .overview {
+//     background-image: none;
+//     display: flex;
+//     background-size: 200%; // background-image: none;
+//     background-position: right top; // background-image: none;
+//     &__wrapper-mobile {
+//       background-repeat: no-repeat;
+//       display: flex;
+//       align-items: center;
+//       flex-direction: column;
+//       width: 90%;
+//     }
+//     &__hero {
+//       display: flex;
+//       flex-wrap: nowrap;
+//       justify-content: center;
+//       align-items: center;
+//       margin-left: 0;
+//       flex-direction: column;
+//       overflow: hidden;
+//       height: 110rem;
+//     }
+//     &__title {
+//       @include font-big-headline-mobile--blue;
+//       margin: 0;
+//       align-self: flex-start;
+//       width: 90%;
+//       margin-left: $medium-metric;
+//     }
+//     &__image {
+//       background-image: url('../images/first_section_bg.png');
+//       background-size: contain;
+//       background-repeat: no-repeat;
+//       order: 0;
+//       width: 100%;
+//       height: 40rem;
+//       margin-left: 60px;
+//     }
+//     &__hand {
+//       // margin-bottom: -26rem;
+//       max-width: 100%;
+//     }
+//     &__info {
+//       width: 100%;
+//       background-color: $white;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//     &__description {
+//       background-color: $background-color;
+//       width: 90%;
+//       padding-top: $large-metric;
+//       margin: 0;
+//     }
+//     &__app-links {
+//       background-color: $background-color;
+//       width: 100%;
+//       height: 5.2rem;
+//       display: flex;
+//       justify-content: space-around;
+//       margin-top: 3rem;
+//     }
+//     &__app-badge {
+//       height: 5.2rem;
+//       margin: 0;
+//     }
+//     &__text {
+//       display: flex;
+//       justify-content: center;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+// }

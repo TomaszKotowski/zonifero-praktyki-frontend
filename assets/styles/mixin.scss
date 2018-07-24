@@ -27,7 +27,7 @@
   font-weight: 700;
   font-size: 4rem;
   color: $product-color;
-  line-height: 8rem;
+  line-height: 4rem;
 }
 
 @mixin font-small-headline {
@@ -47,6 +47,7 @@
 
 @mixin font-description-mobile {
   font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   font-size: 2.2rem;
   color: $black;
   line-height: 3.2rem;

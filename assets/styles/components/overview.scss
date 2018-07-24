@@ -63,45 +63,49 @@
     background-image: url('../images/first_section_bg.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: bottom;
+    overflow: hidden;
     &__wrapper {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      flex-direction: column;
+      display: grid;
+      grid: 38rem 38rem / 60rem auto 52rem 13rem; // justify-content: center;
+      // flex-wrap: wrap; 
+      // flex-direction: column;
       margin-left: $content-margin;
       height: 77.8rem;
+      width: 100%;
     }
     &__title {
-      @include font-big-headline--blue;
-      display: inline-block;
-      margin-top: $xx-large-metric;
+      @include font-big-headline--blue; // margin-top: $xx-large-metric;
+      margin: 0;
       padding: 0;
-      width: 40%;
-      max-height: 100%;
+      grid-column: 1;
+      margin-top: calc(#{$x-large-metric} * 2);
     }
     &__image {
-      // @include grid-column(4);
-      // @include grid-push(6); 
-      order: 2; // margin: $medium-metric 0 0;
-      // width: 20%;
+      grid-column: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      display: flex;
+    }
+    &__hand {
+      margin: 0;
     }
     &__info {
       @include font-description;
-      width: 40%;
-      max-height: 100%;
-      padding: 0;
+      grid-column: 1;
       margin: 0;
+      padding: 0;
+      background-color: transparent // max-height: 10
     }
     &__description {
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
     &__app {
       &-links {
         display: flex;
         margin-top: $large-metric;
-        width: 42rem;
+        width: 32rem;
         &-link {
           display: flex;
           justify-content: center;

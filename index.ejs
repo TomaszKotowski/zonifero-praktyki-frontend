@@ -12,58 +12,72 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header__logo">
-            <img src="./assets/images/logo.png" alt="logo">
+        <div class="header__wrapper">
+            <div class="header__logo header__logo--crop">
+                <img src="./assets/images/logo.png" alt="logo">
+            </div>
+            <!--Main navigation -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__mob-title">
+                        zanifero WorkPlace
+                        <div class="nav__mob-title-drop-down-arrow"></div>
+                    </li>
+                    <li class="nav__work-place">
+                        zanifero WorkPlace:
+                    </li>
+                    <li class="nav__link">
+                        <a link='#'>Overview</a>
+                    </li>
+                    <li class="nav__link">
+                        <a link='#'>Features</a>
+                    </li>
+                    <li class="nav__link">
+                        <a link='#'>Specs</a>
+                    </li>
+                    <li class="nav__link">
+                        <a link='#'>FAQ</a>
+                    </li>
+                    <li class="nav__link">
+                        <a link='#'>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-hamburger">
+                        <div class="header__nav-hamburger-line"></div>
+                        <div class="header__nav-hamburger-line"></div>
+                        <div class="header__nav-hamburger-line"></div>
+                    </li>
+                    <li class="header__nav-links">
+                        <a link='#' class="header__nav__link header__nav__link--small">Zonifero products</a>
+                        <a link='#' class="header__nav__link header__nav__link--small">Store</a>
+                        <a link='#' class="header__nav__link header__nav__link--small">Blog</a>
+                        <a link='#' class="header__nav__link ">
+                            <img src="./assets/images/globe.png" alt="globe" class="header__nav__link--globe">
+                            <div class="header__nav__link header__nav__link__drop-down-arrow"></div>
+                        </a>
+                        <a link='#' class="header__nav__link">Sing in</a>
+                        <a link='#' class="header__nav__link header__nav__link--blue">Get the app</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <nav class="header__nav-mob">
+                        <ul class="header__nav-mob-list">
+                            <li class="header__nav-mob-logo">
+                                <img src="./assets/images/logo.png" alt="logo">
+                            </li>
+                            <li class="header__nav-mob-work-place"> zanifero WorkPlace: </li>
+                            <li class="header__nav-mob-hamburger">
+                                <div class="header__nav-mob-hamburger-line"></div>
+                                <div class="header__nav-mob-hamburger-line"></div>
+                                <div class="header__nav-mob-hamburger-line"></div>
+                            </li>
+                            </u>
+                    </nav> -->
         </div>
-        <nav class="header__nav">
-            <a link='#' class="header__nav__link header__nav__link--small">Zonifero products</a>
-            <a link='#' class="header__nav__link header__nav__link--small">Store</a>
-            <a link='#' class="header__nav__link header__nav__link--small">Blog</a>
-            <a link='#' class="header__nav__link ">
-                <img src="./assets/images/globe.png" alt="globe" class="header__nav__link--globe">
-                <div class="header__nav__link header__nav__link__drop-down-arrow"></div>
-            </a>
-            <a link='#' class="header__nav__link">Sing in</a>
-            <a link='#' class="header__nav__link header__nav__link--blue">Get the app</a>
-        </nav>
-        <nav class="header__nav-mob">
-            <ul class="header__nav-mob-list">
-                <li class="header__nav-mob-logo">
-                    <img src="./assets/images/logo.png" alt="logo">
-                </li>
-                <li class="header__nav-mob-work-place"> zanifero WorkPlace: </li>
-                <li class="header__nav-mob-hamburger">
-                    <div class="header__nav-mob-hamburger-line"></div>
-                    <div class="header__nav-mob-hamburger-line"></div>
-                    <div class="header__nav-mob-hamburger-line"></div>
-                </li>
-                </u>
-        </nav>
     </header>
-    <!--Navigation -->
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__work-place">
-                zanifero WorkPlace:
-            </li>
-            <li class="nav__link">
-                <a link='#'>Overview</a>
-            </li>
-            <li class="nav__link">
-                <a link='#'>Features</a>
-            </li>
-            <li class="nav__link">
-                <a link='#'>Specs</a>
-            </li>
-            <li class="nav__link">
-                <a link='#'>FAQ</a>
-            </li>
-            <li class="nav__link">
-                <a link='#'>Contact</a>
-            </li>
-        </ul>
-    </nav>
-
     <!-- Overview -->
     <div class="overview">
         <div class="overview__wrapper">
